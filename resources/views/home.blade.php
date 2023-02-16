@@ -24,17 +24,15 @@
     
     <main class="bg-light">
         <div class="container">
-            <h2>Prodotti</h4>
+            <h2>Products by categories</h4>
+            <a href="{{route('products.index')}}" type="button" class="btn btn-primary">Show all products</a>
             @foreach ($categories as $category)
                 <h2>{{$category->name}}</h2>
                 <ul>
                     @foreach ($category ->products as $product)
                         <a href="">
                             <li>
-                                [{{ $product->code }}] {{ $product->name }} - TYPOLOGY: {{ $product->typology ->name }} - DIGITAL: {{ $product->typology->digital ? "YES" : "NO" }} - CATEGORIES: 
-                                @foreach ($product->categories as $category)
-                                    - {{$category->name}}
-                                @endforeach
+                                [{{ $product->code }}] {{ $product->name }} - TYPOLOGY: {{ $product->typology ->name }} - DIGITAL: {{ $product->typology->digital ? "YES" : "NO" }}
                             </li>
                         </a>
                     @endforeach
