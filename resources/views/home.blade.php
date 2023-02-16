@@ -26,6 +26,7 @@
         <div class="container">
             <h2>Products by categories</h4>
             <a href="{{route('products.index')}}" type="button" class="btn btn-primary">Show all products</a>
+            <a href="{{route('products.create')}}" type="button" class="btn btn-primary">Add product</a>
             @foreach ($categories as $category)
                 <h2>{{$category->name}}</h2>
                 <ul>

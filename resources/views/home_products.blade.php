@@ -26,7 +26,7 @@
         <div class="container">
             <h2>Prodotti</h4>
             <a href="{{route('index')}}" type="button" class="btn btn-primary">Go back</a>
-
+            <a href="{{route('products.create')}}" type="button" class="btn btn-primary">Add product</a>
             <ul>
                 @foreach ($products as $product)
                     <a href="">
@@ -39,8 +39,6 @@
                     </a>
                 @endforeach
             </ul>
-            
-
         </div>
     </main>
 

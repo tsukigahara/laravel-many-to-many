@@ -10,11 +10,14 @@ class Product extends Model
 {
     use HasFactory;
 
-    private $code;
-    private $name;
-    private $description;
-    private $price;
-    private $weight;
+    protected $fillable = [
+
+        'code',
+        'name',
+        'description',
+        'price',
+        'weight',
+    ];
 
     public function typology()
     {

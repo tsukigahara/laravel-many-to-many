@@ -9,7 +9,7 @@ class UniqueCode extends Model
 {
     use HasFactory;
 
-    public function generate($var)
+    static public function generate($var)
     {
         switch ($var) {
             case 'p':

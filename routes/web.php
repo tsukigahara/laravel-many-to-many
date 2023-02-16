@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/products', [MainController::class, 'indexProducts'])->name('products.index');
+Route::get('/products/create', [MainController::class, 'create'])->name('products.create');
+Route::post('/products/store', [MainController::class, 'store'])->name('products.store');
